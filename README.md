@@ -1,0 +1,2 @@
+# synergy
+streamlit deployed
