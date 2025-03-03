@@ -314,16 +314,8 @@ def main():
             with st.spinner("Fetching news..."):
                 try:
                     prompt = (
-                        f"Generate a concise, bullet-point summary of {stock_name}'s quarterly results from the past week. "
-                        "Each bullet point should include realistic financial metrics with specific numerical values. For example:\n"
-                        "• Year-over-year revenue growth of approximately 5%\n"
-                        "• Earnings per share around ₹3.45\n"
-                        "• Price-to-earnings ratio near 12.5\n"
-                        "• Dividend yield roughly 2.5%\n"
-                        "• Return on investment about 15%\n\n"
-                        "Also, mention market analyst sentiment, stock price fluctuations (e.g., a 3% change), "
-                        "and key factors such as global steel demand or variations in raw material costs. "
-                        "Replace any placeholders with plausible numbers."
+                        f"Analyze recent news articles about {stock_name}. "
+                        "Provide a summary of key trends, risks, and market sentiment."
                     )
                     response = model.generate_content(prompt)
                     
