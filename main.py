@@ -255,7 +255,6 @@ Use precise numbers and maintain professional tone."""
 
 # Main app function
 def main():
-    st.title("Equity Market Analysis and Stock Prediction")
     st.markdown("---")
     
     # Create tabs in the navigation bar
